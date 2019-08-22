@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HengqinServiceApplication {
 	/*程序入口*/
+    // 注释
 	public static void main(String[] args) {
 		SpringApplication.run(HengqinServiceApplication.class, args);
 	}
