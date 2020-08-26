@@ -1,0 +1,30 @@
+{
+  "name": "pc-test",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --mode prod"
+  },
+  "dependencies": {
+    "core-js": "^3.4.4",
+    "element-ui": "^2.13.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.13.0",
+    "sass": "^1.24.4",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

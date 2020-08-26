@@ -1,0 +1,14 @@
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router/index'
+
+new Vue({
+    router,
+    data() {
+        return {
+            historyList: []
+        }
+    },
+    render: h => h(App)
+}).$mount('#app')
+

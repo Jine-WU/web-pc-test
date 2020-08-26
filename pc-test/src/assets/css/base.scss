@@ -1,0 +1,254 @@
+// external-import组件我跟她
+// 主颜色(蓝)
+$primary-blue: #8CACD2;
+
+$info-color: #F5F5F5;
+// 提示的颜色(灰)
+$placeholder-color: #9B9B9B;
+// 淡灰色
+$light-black:#4A4A4A;
+// 背景米色
+$beige-color: #EFEFEF;
+
+$line-color: #E6E6E6;
+
+html, body {
+    height: 100%;
+}
+/*清除默认样式*/ 
+// html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+// fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+// select, input { vertical-align:middle;}
+// /*select, input, textarea { font-size:12px; margin:0; }*/
+// textarea { resize:none; } /*防止拖动*/
+// img {border:0; vertical-align:middle; }  
+// /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+// table { border-collapse:collapse; }
+// a {text-decoration:none;}
+// 一级标题
+.page-one-title {
+    margin: 0;
+    //background-color: $primary-blue;
+    //color: #FFFFFF;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+// 二级标题
+.page-two-title {
+    margin: 0;
+    background-color: $info-color;
+    color: #5C626F;
+    height: 30px;
+    //line-height: 30px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    span:first-child {
+        display: inline-block;
+        border-left: 4px solid $primary-blue;
+        padding-left: 5px;
+        //width: 5px;
+        //background: $primary-blue;
+        //color: $primary-blue;
+    }
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+
+// 按钮组样式
+.page-btn-container {
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+// 边框样式
+.box-border-all {
+    border: 1px solid $line-color;
+    padding: 2px;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.box-border-radius-tl-tr {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+// 阴影
+.box-shadow {
+    box-shadow:2px 2px 5px $line-color;
+}
+.padding-15{
+    padding:15px;
+}
+.padding-8{
+    padding:8px;
+}
+// 左右内边距
+.padding-f-r-15 {
+    padding: 0 15px;
+}
+
+// 上下内边距
+.padding-t-b-15 {
+    padding: 15px 0;
+}
+
+// 下外边距
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+// 行内高度45px
+.row-line-height-45 {
+    line-height: 45px;
+}
+
+// 输入框样式
+.label-input {
+    display: flex;
+    align-items: flex-start;
+    min-width: 390px;
+    label {
+        display: inline-block;
+        width: 160px;
+        font-size: 13px;
+        text-align: right;
+        margin-right: 5px;
+        b, span {
+            color: red;
+            padding-right: 5px;
+        }
+    }
+    .search-body-item {
+        width: 250px;
+    }
+}
+
+.module-box {
+    background-color: $beige-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .module-content {
+        flex: 1;
+        padding: 8px 0;
+    }
+}
+
+.slide-bottom-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-bottom-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-bottom-enter,
+.slide-bottom-leave-to {
+    transform: translate3d(-50%, 100%, 0)
+}
+
+/*****************弹性布局*******************/
+// 弹性布局，行内间隔相等
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+// 弹性布局，行内间隔相等；交叉轴中点对齐
+.flex-row-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// 弹性布局，行内元素两侧间隔相等；交叉轴中点对齐；主轴内换行
+.flex-row-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// 弹性布局，行内居中显示；交叉轴中点对齐
+.flex-row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 弹性布局，主轴内换行；交叉轴中点对齐
+.flex-row-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+// 弹性布局，垂直布局并起点在上沿；交叉轴左对齐
+.flex-column-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+// 弹性布局，垂直布局并起点在上沿；项目间间隔相等；交叉轴中点对齐
+.flex-column-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// 弹性布局，垂直布局并起点在上沿；居中；交叉轴中点对齐；
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*****************弹性布局*******************/
+
+// 页面样式
+.page {
+    padding: 15px 10px 15px 15px !important;
+    overflow-y: scroll !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.el-table tr th {
+    background-color: #f7f8fa;
+}
+//.el-table__row:hover td {
+//    background-color: #e5edf7 !important;
+//}
+//.el-table__row--striped td {
+//    background-color: #e5edf7 !important;
+//}
+
+//.el-button--primary {
+//    color: #FFFFFF;
+//    background-color: #8CACD2 !important;
+//    border-color: #8CACD2 !important;
+//}
+//.el-button--success {
+//    color: #FFF;
+//    background-color: #97d279;
+//    border-color: #97d279;
+//}
+.el-button--danger {
+    color: #FFF;
+    background-color: #f37272;
+    border-color: #f37272;
+}
+
+.el-popper{
+    margin-bottom:0 !important;
+}
